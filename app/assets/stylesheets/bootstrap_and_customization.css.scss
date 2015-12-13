@@ -22,3 +22,8 @@ $jumbotron-bg:                     white;
 .navbar-brand {
      font-weight: bold;
 }
+
+//Override bootstrap and remove margins on check boxes
+.checkbox input[type="checkbox"] {
+  margin-left: 0;
+}
