@@ -23,7 +23,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 # User auth and logins
 gem 'devise', '~> 3.5.2'
-
+# Image handling with paperclip in any 4.x version above 4.2 but before 5 is what ~> means
+gem 'paperclip', '~> 4.2'
+# AWS SDK
+gem 'aws-sdk', '< 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
