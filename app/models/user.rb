@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :pins
+  has_many :pins, dependent: :destroy # second part deletes dependent pins if user deletes account
 
   validates :firstname, presence: true
   validates :lastname, presence: true
